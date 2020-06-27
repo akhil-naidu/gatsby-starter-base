@@ -3,6 +3,20 @@ import { useSiteMetadata, useColorMode } from "@reflexjs/gatsby-theme-core"
 export const HeaderBlock = ({ ...props }) => {
   const [showMenu, setShowMenu] = React.useState(false)
   return (
+    <React.Fragment>
+      {isFront && (
+        <Section bg="muted" py="4">
+          <Container>
+            <P m="0" fontSize="md" textAlign="left|center">
+              <Strong>Reflex is still in development</Strong> and we are
+              actively working on new features.{" "}
+              <A href="https://twitter.com/arshadcn" rel="noreferrer">
+                Follow us
+              </A>{" "}
+              to be notified when it's ready.
+            </P>
+          </Container>
+        </Section>
     <Header
       position={["sticky", "relative"]}
       top="0"
