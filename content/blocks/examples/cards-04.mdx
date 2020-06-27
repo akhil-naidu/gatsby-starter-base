@@ -1,0 +1,15 @@
+export const Cards = ({ ...props }) => (
+
+)
+export const Card = ({ image, title, link, ...props }) => ( <Flexbox flexDirection="column" boxShadow="xl" rounded="xl" overflow="hidden" {...props}
+
+<Image src={image} w="full" h="32|40|64" />
+<Flexbox flexDirection="column" flex="1" textAlign="center" p="6|8">
+  <P fontSize="xl" fontWeight="semibold" m="0" flex="1">
+    {title}
+  </P>
+  <ButtonLink href={link} variant="primary sm" mt="6">
+    Learn more <Icon name="arrow-right" ml="2" />
+  </ButtonLink>
+</Flexbox>
+)
