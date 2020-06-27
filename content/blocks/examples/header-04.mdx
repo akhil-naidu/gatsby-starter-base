@@ -1,6 +1,12 @@
-import { useSiteMetadata, useColorMode } from "@reflexjs/gatsby-theme-core"
+import {
+  useSiteMetadata,
+  useColorMode,
+  useLocation,
+} from "@reflexjs/gatsby-theme-core"
+import { useNav } from "@reflexjs/gatsby-theme-nav"
 
 export const HeaderBlock = ({ ...props }) => {
+  const { isFront } = useLocation()
   const [showMenu, setShowMenu] = React.useState(false)
   return (
     <React.Fragment>
