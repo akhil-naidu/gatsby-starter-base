@@ -15,8 +15,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Reflex`,
-        short_name: `Reflex`,
+        name: `Leeward`,
+        short_name: `Leeward`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#000`,
